@@ -16,12 +16,12 @@ const PortfolioObject = forwardRef<THREE.Group, PortfolioObjectProps>(({
   const hoverRef = useRef(0);
 
   // Load all models
-  const { scene: deskModel } = useGLTF('/models/Desk.glb');
-  const { scene: bookcaseModel } = useGLTF('/models/bookcase with books.glb');
-  const { scene: makersDeskModel } = useGLTF('/models/maker\'s desk 9f90.glb');
-  const { scene: phoneModel } = useGLTF('/models/office phone.glb');
+  const { scene: deskModel } = useGLTF('/models/desk.glb');
+  const { scene: bookcaseModel } = useGLTF('/models/bookcase.glb');
+  const { scene: makersDeskModel } = useGLTF('/models/makersdesk.glb');
+  const { scene: phoneModel } = useGLTF('/models/officephone.glb');
   const { scene: brainModel } = useGLTF('/models/brain.glb');
-  const { scene: messageBoardModel } = useGLTF('/models/message board.glb');
+  const { scene: messageBoardModel } = useGLTF('/models/messageboard.glb');
 
   useFrame((_, delta) => {
     if (objectRef.current) {

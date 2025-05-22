@@ -22,7 +22,7 @@ const Character = forwardRef<THREE.Group>((_, ref) => {
   const isMoving = useRef(false);
 
   // Load model and animations
-  const { scene, animations } = useGLTF('/models/business man.glb');
+  const { scene, animations } = useGLTF('/models/businessman.glb');
   const { actions } = useAnimations(animations, characterRef);
 
   useEffect(() => {
